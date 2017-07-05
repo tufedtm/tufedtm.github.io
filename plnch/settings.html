@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>настройки</title>
+
+  <link href="static/css/app.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <header class="site-header">
+  <div class="header-left">
+    <img src="static/img/logo-white.svg" alt="logo">
+  </div>
+
+  <div class="header-right">
+    <a href=""><span>Омар Хияришка</span></a>
+    <a href="">Настройки</a>
+    <a href="">Счет &mdash; <span>15645 Р</span></a>
+    <a href="">Выход</a>
+  </div>
+</header>
+
+
+  <div class="dashboard">
+
+    <aside class="dashboard__sidebar">
+  <p class="aside-header">Подключенные соц.сети</p>
+
+  <ul class="aside-items">
+    <li class="aside-item aside-item--fb">
+      <p class="aside-item__header">Facebook</p>
+      <span class="aside-item__counter">12</span>
+
+      <a class="aside-item__link" href="">Аккаунты</a>
+      <a class="aside-item__link" href="">Аналитика</a>
+    </li>
+    <li class="aside-item aside-item--vk">
+      <p class="aside-item__header">Вконтакте</p>
+      <span class="aside-item__counter">5</span>
+
+      <a class="aside-item__link" href="">Аккаунты</a>
+      <a class="aside-item__link" href="">Аналитика</a>
+    </li>
+    <li class="aside-item aside-item--ig aside-item--coming-soon">
+      <p class="aside-item__header">Instagram</p>
+      <span class="aside-item__coming-soon">Скоро</span>
+    </li>
+  </ul>
+</aside>
+
+
+    <div class="dashboard__settings">
+      <div class="settings__left">
+        <p class="s-l__header">Каналы привлечения аккаунта:</p>
+
+        <div class="s-l__item">
+          <a class="s-l__logo" href=""><img src="http://placehold.it/40x40"></a>
+          <a class="s-l__name" href="">Омаргаджи Нахибашев</a>
+          <p class="s-l__status-active"><span>Активно</span> &mdash; 2 канала</p>
+        </div>
+
+        <div class="s-l__item s-l__item--half">
+          <div class="s-l__item-left">
+            <span class="s-l__deadline-days">Осталось <strong>29</strong> дней</span>
+            <span class="s-l__deadline-date">Срок истечения: <strong>30.11.2016</strong></span>
+          </div>
+          <button class="btn--prolong btn--warning">Продлить</button>
+        </div>
+
+        <div class="s-l__item s-l__item--half">
+          <div class="s-l__info-item">
+            <span class="account__header">Друзей</span>
+            <strong class="account__counter">45</strong> <span class="account__added">+2</span>
+          </div>
+
+          <div class="s-l__info-item">
+            <span class="account__header">Лайков</span>
+            <strong class="account__counter">1250</strong> <span class="account__added">+54</span>
+          </div>
+
+          <div class="s-l__info-item">
+            <span class="account__header">Исходящих запросов</span>
+            <strong class="account__counter">342</strong> <span class="account__added">+352</span>
+          </div>
+        </div>
+
+        <div class="s-l__item">
+          <button class="s-l__pause">Остановить все каналы</button>
+          <button class="s-l__setting">Настройки</button>
+        </div>
+
+      </div>
+
+      <div class="settings__right">
+        <div class="s-r-header">
+          <p class="s-r-header__text">Каналов активировано &mdash; <strong>2</strong></p>
+
+          <div class="content__filters" data-js-filter-group>
+            <button class="btn--link content__filter content__filter--current" data-filter="*">Все каналы</button>
+            <button class="btn--link content__filter" data-filter="[data-js-grid-active]">Активные</button>
+            <button class="btn--link content__filter" data-filter="[data-js-grid-pause]">На паузе</button>
+            <button class="btn--link content__filter" data-filter="[data-js-grid-archive]">Архив</button>
+          </div>
+        </div>
+
+        <div class="s-r-control-wrap">
+          <button class="btn btn--channel-add">+ Добавить новый канал</button>
+          <p class="acc-control__text">
+            Создавайте новые каналы привлечения, чтобы привлечь новых подписчиков.<br><br>
+            Вы можете создавать каналы с разными фильтрами одновременно.
+          </p>
+        </div>
+
+        <table class="channels" data-js-grid>
+          <tr class="channel__item" data-js-grid-item data-js-grid-active>
+            <td>
+              <p class="channel__title">Follow and like подписчиков</p>
+              <p class="channel__target">Жертва &mdash; <span>Пери Инновации</span></p>
+              <p class="channel__conversion"><span>10.84%</span> конверсия</p>
+            </td>
+            <td>
+              <p class="channel__title--second">Стата:</p>
+              <p class="channel__covered">14 730 охвачено</p>
+              <p class="channel__subscribers">8 434 подписчика</p>
+            </td>
+            <td>
+              <button class="channel__statistic"></button>
+              <button class="channel__setting"></button>
+              <button class="channel__pause">Пауза</button>
+            </td>
+          </tr>
+          <tr class="channel__item" data-js-grid-item data-js-grid-pause>
+            <td>
+              <p class="channel__title">Follow and like подписчиков</p>
+              <p class="channel__target">Жертва &mdash; <span>Пери Инновации</span></p>
+              <p class="channel__conversion"><span>lol</span> конверсия</p>
+            </td>
+            <td>
+              <p class="channel__title--second">Стата:</p>
+              <p class="channel__covered">14 730 охвачено</p>
+              <p class="channel__subscribers">8 434 подписчика</p>
+            </td>
+            <td>
+              <button class="channel__statistic"></button>
+              <button class="channel__setting"></button>
+              <button class="channel__start">Запуск</button>
+            </td>
+          </tr>
+          <tr class="channel__item" data-js-grid-item data-js-grid-pause>
+            <td>
+              <p class="channel__title">Follow and like подписчиков</p>
+              <p class="channel__target">Жертва &mdash; <span>Пери Инновации</span></p>
+              <p class="channel__conversion"><span>over 9000</span> конверсия</p>
+            </td>
+            <td>
+              <p class="channel__title--second">Стата:</p>
+              <p class="channel__covered">14 730 охвачено</p>
+              <p class="channel__subscribers">8 434 подписчика</p>
+            </td>
+            <td>
+              <button class="channel__statistic"></button>
+              <button class="channel__setting"></button>
+              <button class="channel__start">Запуск</button>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="https://cdn.jsdelivr.net/isotope/3.0.1/isotope.pkgd.min.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

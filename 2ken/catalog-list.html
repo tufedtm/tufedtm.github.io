@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Philosopher:700|Roboto:300,400,500,700,900&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link href="static/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header-wrap">
+  <div class="site-header container hidden-md-down">
+    <a class="logo-wrap" href="/">
+      <img src="http://placehold.it/80x80" alt="">
+      <span class="logo-text">2Ken<small>вся республика в твоих руках</small></span>
+    </a>
+
+    <nav class="site-nav site-nav--header">
+      <ul>
+        <li class="site-nav__dropdown-link"><a href="catalog-list.html">Каталог</a>
+          <ul class="site-nav__dropdown">
+            <li><a href="catalog-list.html">Шопинг</a></li>
+            <li class="current"><a href="catalog-list.html">Еда</a></li>
+            <li><a href="catalog-list.html">Красота и здоровье</a></li>
+            <li><a href="catalog-list.html">Развлечения</a></li>
+            <li><a href="catalog-list.html">Услуги</a></li>
+            <li><a href="catalog-list.html">Праздник</a></li>
+            <li><a href="catalog-list.html">Электроника</a></li>
+            <li><a href="catalog-list.html">Свадьба</a></li>
+            <li><a href="catalog-list.html">Для дома и дачи</a></li>
+            <li><a href="catalog-list.html">Драгоценности</a></li>
+            <li><a href="catalog-list.html">Личное развитие</a></li>
+            <li><a href="catalog-list.html">Транспорт</a></li>
+            <li><a href="catalog-list.html">Путешествия</a></li>
+            <li><a href="catalog-list.html">Эко-продукция</a></li>
+            <li><a href="catalog-list.html">Гастрономия</a></li>
+            <li><a href="catalog-list.html">Банк</a></li>
+          </ul>
+        </li>
+        <li><a href="blog-list.html">Блог</a></li>
+        <li><a href="">Рейтинги</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-wrap">
+      
+
+      
+        <a class="user__username" href="personal.html">Magomed <img src="http://placehold.it/40x40" alt="Magomed"></a>
+        <div class="user__logout">
+          <a href="/">Выйти</a>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="site-header-xs container hidden-lg-up">
+    <div class="site-header-xs__top">
+      <a class="logo-wrap" href="/">
+        <img src="http://placehold.it/40x40" alt="">
+        <span class="logo-text">2Ken<small>вся республика в твоих руках</small></span>
+      </a>
+
+      <button class="header-xs__btn" data-js-xs-btn="catalog">Каталог</button>
+
+      <button class="header-xs-nav-toggle" data-js-xs-toggle-btn></button>
+    </div>
+    <div class="site-header-xs__bottom" data-js-xs-bottom>
+      <div>
+        <nav class="xs-nav">
+          <button class="xs-nav__item" data-js-xs-btn="blog">Блог</button>
+          <button class="xs-nav__item" data-js-xs-btn="rating">Рейтинги</button>
+        </nav>
+
+        
+
+        <div class="user-xs-wrap">
+          <img class="user-xs-img" src="static/img/profile-icon.svg">
+          <button class="xs-nav__item" data-js-xs-btn="sign_in">Войти</button>
+          <button class="xs-nav__item" data-js-xs-btn="sign_up">Регистрация</button>
+        </div>
+
+      </div>
+
+      <div class="auth-form-wrap-xs auth-form-wrap--sign-in" data-js-xs-content="sign_in">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <p class="auth-form__title">Авторизация</p>
+        <button class="auth-form__change-form-btn" data-js-xs-btn="sign_up">регистрация</button>
+
+        <form class="auth__form">
+          <input class="input" type="text" placeholder="логин" required>
+          <input class="input" type="password" placeholder="пароль" required>
+
+          <button class="btn btn--header-submit">Войти</button>
+        </form>
+
+        <p class="auth-form__or">или</p>
+        <div class="soc-auth"></div>
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="sign_up">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <p class="auth-form__title">Регистрация</p>
+        <button class="auth-form__change-form-btn" data-js-xs-btn="sign_in">авторизация</button>
+
+        <form class="auth__form">
+          <input class="input" type="text" placeholder="логин" required>
+          <input class="input" type="password" placeholder="пароль" required>
+          <input class="input" type="password" placeholder="пароль еще раз" required>
+
+          <button class="btn btn--header-submit">Зарегистрироваться</button>
+        </form>
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="catalog">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <div class="aside-catalog">
+  <h2 class="aside__title">Каталог</h2>
+
+  <form class="aside__form">
+    <input type="search" placeholder="поиск" required>
+  </form>
+
+  <ul>
+    
+      
+        <li class="current"><a href="../catalog-list.html">Шопинг</a>
+          <ul>
+            
+              <li><a href="../catalog-list.html">Рестораны (15)</a></li>
+            
+              <li><a href="../catalog-list.html">Магазины (42)</a></li>
+            
+              <li><a href="../catalog-list.html">Кафе (25)</a></li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Красота и здоровье</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Развлечения</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Услуги</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Праздник</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Электроника</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Свадьба</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Для дома и дачи</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Драгоценности</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Личное развитие</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Транспорт</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Путешествия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Эко-продукция</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Гастрономия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Банк</a></li>
+      
+    
+  </ul>
+</div>
+
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="blog">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <div class="aside-catalog">
+  <h2 class="aside__title">Блог</h2>
+
+  <ul>
+    
+      <li><a href="../blog-list.html">Автомобили</a></li>
+    
+      <li><a href="../blog-list.html">Наука и техника</a></li>
+    
+      <li><a href="../blog-list.html">Еда</a></li>
+    
+      <li><a href="../blog-list.html">Спорт</a></li>
+    
+      <li><a href="../blog-list.html">Животные</a></li>
+    
+      <li><a href="../blog-list.html">Мир</a></li>
+    
+      <li><a href="../blog-list.html">Места</a></li>
+    
+      <li><a href="../blog-list.html">Люди</a></li>
+    
+  </ul>
+</div>
+
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="rating">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <ul class="aside-cities">
+  <li><a href="">Буйнакск</a></li>
+  <li><a href="">Дагестанские огни</a></li>
+  <li><a class="current" href="">Дербент</a></li>
+  <li><a href="">Избербаш</a></li>
+  <li><a href="">Каспийск</a></li>
+  <li><a href="">Кизляр</a></li>
+  <li><a href="">Махачкала</a></li>
+  <li><a href="">Хасавюрт</a></li>
+  <li><a href="">Южно-Сухокумск</a></li>
+</ul>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<div class="container">
+  
+  <div class="row catalog-list-page">
+    <aside class="col-lg-3 hidden-md-down">
+      <div class="aside-catalog">
+  <h2 class="aside__title">Каталог</h2>
+
+  <form class="aside__form">
+    <input type="search" placeholder="поиск" required>
+  </form>
+
+  <ul>
+    
+      
+        <li class="current"><a href="../catalog-list.html">Шопинг</a>
+          <ul>
+            
+              <li><a href="../catalog-list.html">Рестораны (15)</a></li>
+            
+              <li><a href="../catalog-list.html">Магазины (42)</a></li>
+            
+              <li><a href="../catalog-list.html">Кафе (25)</a></li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Красота и здоровье</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Развлечения</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Услуги</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Праздник</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Электроника</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Свадьба</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Для дома и дачи</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Драгоценности</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Личное развитие</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Транспорт</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Путешествия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Эко-продукция</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Гастрономия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Банк</a></li>
+      
+    
+  </ul>
+</div>
+
+    </aside>
+
+    <div class="catalog-list col-lg-9">
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">ресторан</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">Пиросмани</a></h4>
+            <p class="catalog-item__address">ул. Пушкина, 4</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">кофейня</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">З&amp;М</a></h4>
+            <p class="catalog-item__address">ул. И. Казака, 27А</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">магазин</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">05.ru</a></h4>
+            <p class="catalog-item__address">пр. Имама Шамиля, 5</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">выпечка</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">Тулуза</a></h4>
+            <p class="catalog-item__address">пр. Имама Шамиля, 29</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">салон красоты</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">Lakshmi</a></h4>
+            <p class="catalog-item__address">пр. Гамидова, 6а</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">зоомагазин</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">Евроаквариум</a></h4>
+            <p class="catalog-item__address">пр-кт Гамидова, 73</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">магазин</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">Чудо света</a></h4>
+            <p class="catalog-item__address">ул. Коркмасова, 27Б</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 col-6">
+          <div class="catalog-item">
+            <span class="catalog-item__badge">выпечка</span>
+            <a class="catalog-item__image" href="catalog-detail.html">
+              <img src="http://placehold.it/265x197" alt="">
+            </a>
+
+            <h4 class="catalog-item__title"><a href="catalog-detail.html">La-creme</a></h4>
+            <p class="catalog-item__address">ул. Дзержинского, 12</p>
+
+            <div class="catalog-item__rating">
+              <a class="catalog-item__rating-item" href="">105</a>
+              <a class="catalog-item__rating-item" href="">2</a>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+<footer class="site-footer-wrap">
+  <div class="site-footer container">
+    <span>2ken 2017</span>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="catalog-list.html">Каталог</a></li>
+        <li><a href="blog-list.html">Блог</a></li>
+        <li><a href="">Рейтинги</a></li>
+      </ul>
+    </nav>
+
+    <div class="soc">
+      <a class="soc-item--vk" href="" target="_blank"></a>
+      <a class="soc-item--ig" href="" target="_blank"></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="static/lib/css-polyfills.min.js"></script>
+<script src="static/lib/jquery.maskedinput.min.js"></script>
+<script src="static/lib/lightslider/lightslider.min.js"></script>
+<script src="static/lib/jquery.formstyler.min.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

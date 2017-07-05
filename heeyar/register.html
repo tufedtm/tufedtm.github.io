@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>регистрация</title>
+
+  <link href="static/css/app.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <div class="auth-main">
+    <div class="auth-left">
+      <img src="static/img/logo.svg" alt="logo">
+
+      <div class="auth-text-wrap">
+        <div class="auth-text__item">
+          <p class="h2">Добро пожаловать, в хиярчик</p>
+          <p class="auth-text">Наш огурчик помогает вам в поиске лидеров мнений с меньшим количеством подписчиков но с большей вовлеченностью аудитории</p>
+        </div>
+
+        <div class="auth-text__item">
+          <p class="h3">Уникальная технология анализа</p>
+          <p class="auth-text">Мы анализируем указанные вами аккаунты и подбираем для вас наиболее выгодные, с более лояльной аудиторией.</p>
+        </div>
+      </div>
+
+      <footer class="auth-footer">
+        <a class="link" href="mailto:">Связаться с нами</a><span>&nbsp; |&nbsp; &copy; Все права в куриной заднице </span>
+      </footer>
+    </div>
+
+    <div class="auth-right">
+      <div class="register-wrap">
+        <p class="h1">Создание нового аккаунта</p>
+        <p class="h-sub">Уже есть аккаунт? <a class="link" href="login.html">Авторизоваться!</a></p>
+
+        <form class="auth-form">
+          <label class="label label--auth">
+            Ваше имя
+            <input class="input input--auth" type="text" required>
+          </label>
+          <label class="label label--auth">
+            Укажите ваш email адрес
+            <input class="input input--auth" type="email" required>
+          </label>
+          <label class="label label--auth">
+            Ну и пароль тоже
+            <input class="input input--auth" type="password" required>
+          </label>
+          <label class="label label--auth label--captcha">
+            Введите цифры, которые видите
+            <img src="http://placehold.it/190x54">
+            <input class="input input--auth" type="text" required>
+          </label>
+
+          <input class="btn btn--active btn--auth" type="submit" value="Зарегестрироваться">
+
+          <label class="label label--auth label--checkbox">
+            <input type="checkbox" checked> Подписаться на полезную рассылку новостей
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

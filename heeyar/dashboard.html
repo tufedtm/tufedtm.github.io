@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>dashboard</title>
+
+  <link href="static/css/app.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+
+  <header class="site-header">
+  <div class="header__logo">
+    <img src="static/img/logo-white.svg" alt="logo">
+  </div>
+
+  <div class="header__user">
+    <a class="header__link header__link--username header__divider" href="">Андрей Балконини</a>
+    <a class="header__link" href="">Настройки</a>
+    <a class="header__link" href="">Выход</a>
+  </div>
+
+  <div class="header__balance">
+    <span class="header__link">На счету: <span class="header__balance-count">46 рублей</span></span>
+    <a class="refill link header__divider" href="">Пополнить</a>
+  </div>
+</header>
+
+
+  <main class="dashboard">
+    <div class="dashboard__content">
+      <div class="dashboard__item">
+        <p class="analysis__title analysis__title--add">Начать новый анализ &nbsp; (№5)</p>
+
+        <form class="analysis__form" method="get" data-js-repeat-for>
+          <label class="label">
+            Укажите аккаунты (каждый, с новой строки)
+            <textarea required data-js-analysisUsers></textarea>
+          </label>
+
+          <fieldset>
+            <label class="label">
+              Лимит подписчиков
+              <input type="number" class="input" required data-js-analysisLimitFollowers>
+            </label>
+            <label class="label">
+              Лимит количества результатов
+              <input type="number" class="input" required data-js-analysisLimitResultsCount>
+            </label>
+
+            <input class="btn btn--active" type="submit" value="Анализ завершен">
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="dashboard__item">
+        <div class="accordion-header" data-js-accordion-header>
+          <p class="analysis__title">№4</p>
+          <div class="analysis__bar-wrap">
+            <div class="analysis__bar-header">
+              <span class="analysis__percent">60%</span>
+              <span class="analysis__followers">1500 подписчиков из 2500</span>
+            </div>
+            <div class="analysis__bar"><span class="analysis__bar-fill" style="width: 60%;"></span></div>
+          </div>
+
+          <div class="analysis__list" data-js-analysis-list-wrap>
+            <p class="analysis__list-title">Анализируются</p>
+            <button class="analysis__list-btn" data-js-analysis-list-show>Показать список аккаунтов</button>
+            <p class="analysis__list-items" data-js-analysis-list>
+              <a href="https://instagram.com/spaceth" target="_blank">@spaceth</a>,
+              <a href="https://instagram.com/709th" target="_blank">@709th</a>,
+              <a href="https://instagram.com/fuuck" target="_blank">@fuuck</a></p>
+          </div>
+
+          <button class="accordion__open-btn" data-js-accordion-open></button>
+          <button class="accordion__close-btn" data-js-accordion-close>Закрыть</button>
+
+        </div>
+
+        <div class="accordion-content" data-js-accordion-content>
+          Контент аккордеона
+        </div>
+      </div>
+
+      <div class="dashboard__item">
+        <div class="accordion-header" data-js-accordion-header>
+          <p class="analysis__title">№3</p>
+          <div class="analysis__bar-wrap">
+            <div class="analysis__bar-header">
+              <span class="analysis__percent">60%</span>
+              <span class="analysis__followers">1500 подписчиков из 2500</span>
+            </div>
+            <div class="analysis__bar"><span class="analysis__bar-fill" style="width: 60%;"></span></div>
+          </div>
+
+          <div class="analysis__list" data-js-analysis-list-wrap>
+            <p class="analysis__list-title">Анализируются</p>
+            <button class="analysis__list-btn" data-js-analysis-list-show>Показать список аккаунтов</button>
+            <p class="analysis__list-items" data-js-analysis-list>
+              <a href="https://instagram.com/fuuck" target="_blank">@fuuck</a>,
+              <a href="https://instagram.com/spaceth" target="_blank">@spaceth</a>,
+              <a href="https://instagram.com/709th" target="_blank">@709th</a>,
+              <a href="https://instagram.com/fuuck" target="_blank">@fuuck</a></p>
+          </div>
+
+          <button class="accordion__open-btn" data-js-accordion-open></button>
+          <button class="accordion__close-btn" data-js-accordion-close>Закрыть</button>
+
+        </div>
+
+        <div class="accordion-content" data-js-accordion-content>
+          Контент аккордеона
+        </div>
+      </div>
+
+      <div class="dashboard__item">
+        <div class="accordion-header" data-js-accordion-header>
+          <p class="analysis__title analysis__title--fin">№2</p>
+          <div class="analysis__bar-wrap">
+            <div class="analysis__bar-header">
+              <span class="analysis__percent">100%</span>
+              <span class="analysis__followers">2500 подписчиков</span>
+            </div>
+            <div class="analysis__bar"><span class="analysis__bar-fill" style="width: 100%;"></span></div>
+          </div>
+
+          <div class="analysis__list" data-js-analysis-list-wrap>
+            <p class="analysis__list-title">Анализируются</p>
+            <button class="analysis__list-btn" data-js-analysis-list-show>Показать список аккаунтов</button>
+            <p class="analysis__list-items" data-js-analysis-list>
+              <a href="https://instagram.com/spacethgsdfgsfdggdgdhdgfdsfgfdgsfdgsfg" target="_blank">@spacethgsdfgsfdggdgdhdgfdsfgfdgsfdgsfg</a>,
+              <a href="https://instagram.com/709th" target="_blank">@709th</a>,
+              <a href="https://instagram.com/fuuck" target="_blank">@fuuck</a>,
+              <a href="https://instagram.com/spaceth" target="_blank">@spaceth</a>,
+              <a href="https://instagram.com/709th" target="_blank">@709th</a>,
+              <a href="https://instagram.com/fuuck" target="_blank">@fuuck</a></p>
+          </div>
+
+          <button class="accordion__open-btn" data-js-accordion-open></button>
+          <button class="accordion__close-btn" data-js-accordion-close>Закрыть</button>
+
+        </div>
+
+        <div class="accordion-content" data-js-accordion-content>
+          <form class="analysis__form" data-js-repeat-from>
+            <label class="label">
+              Укажите аккаунты (каждый, с новой строки)
+              <textarea required disabled data-js-analysisUsers>
+@709th
+@fuuck
+@spaceth</textarea>
+            </label>
+
+            <fieldset>
+              <label class="label">
+                Лимит подписчиков
+                <input type="number" class="input" value="2000" required disabled data-js-analysisLimitFollowers>
+              </label>
+              <label class="label">
+                Лимит количества результатов
+                <input type="number" class="input" value="5" required disabled data-js-analysisLimitResultsCount>
+              </label>
+
+              <input class="btn btn--active" type="submit" value="Анализ завершен" disabled>
+            </fieldset>
+          </form>
+
+          <div class="accounts">
+            <div class="account-item">
+              <div class="account__img">
+                <a href="https://instagram.com/709th" target="_blank">
+                  <img src="http://placehold.it/60x60">
+                </a>
+              </div>
+              <div class="account__info">
+                <a class="account__username" href="https://instagram.com/709th" target="_blank">@709th</a>
+                <p>Среднее кол-во лайков: <strong>4k</strong></p>
+              </div>
+
+              <div class="account__followers">
+                <p class="account__title">Подписчиков</p>
+                <strong class="account__count">15k</strong>
+              </div>
+
+              <div class="account__involvement">
+                <p class="account__title">Вовлеченность аудитории</p>
+                <strong class="account__count">68%</strong>
+              </div>
+            </div>
+
+            <div class="account-item">
+              <div class="account__img">
+                <a href="https://instagram.com/709th" target="_blank">
+                  <img src="http://placehold.it/60x60">
+                </a>
+              </div>
+              <div class="account__info">
+                <a class="account__username" href="https://instagram.com/709th" target="_blank">@709th</a>
+                <p>Среднее кол-во лайков: <strong>4k</strong></p>
+              </div>
+
+              <div class="account__followers">
+                <p class="account__title">Подписчиков</p>
+                <strong class="account__count">15k</strong>
+              </div>
+
+              <div class="account__involvement">
+                <p class="account__title">Вовлеченность аудитории</p>
+                <strong class="account__count">68%</strong>
+              </div>
+            </div>
+
+            <div class="account-item">
+              <div class="account__img">
+                <a href="https://instagram.com/709th" target="_blank">
+                  <img src="http://placehold.it/60x60">
+                </a>
+              </div>
+              <div class="account__info">
+                <a class="account__username" href="https://instagram.com/709th" target="_blank">@709th</a>
+                <p>Среднее кол-во лайков: <strong>4k</strong></p>
+              </div>
+
+              <div class="account__followers">
+                <p class="account__title">Подписчиков</p>
+                <strong class="account__count">15k</strong>
+              </div>
+
+              <div class="account__involvement">
+                <p class="account__title">Вовлеченность аудитории</p>
+                <strong class="account__count">68%</strong>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="analysis__management">
+            <a class="analysis__all" href="">Смотреть все результаты</a>
+            <button class="btn btn--active analysis__repeat" data-js-repeat-btn>Начать новый анализ</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="dashboard__item">
+        <div class="accordion-header" data-js-accordion-header>
+          <p class="analysis__title analysis__title--fin">№2</p>
+          <div class="analysis__bar-wrap">
+            <div class="analysis__bar-header">
+              <span class="analysis__percent">100%</span>
+              <span class="analysis__followers">2500 подписчиков</span>
+            </div>
+            <div class="analysis__bar"><span class="analysis__bar-fill" style="width: 100%;"></span></div>
+          </div>
+
+          <div class="analysis__list" data-js-analysis-list-wrap>
+            <p class="analysis__list-title">Анализируется</p>
+            <button class="analysis__list-btn" data-js-analysis-list-show>Показать список аккаунтов</button>
+            <p class="analysis__list-items" data-js-analysis-list>
+              <a href="https://instagram.com/spacethgsdfgsfdggdgdhdgfdsfgfdgsfdgsfg" target="_blank">@spacethgsdfgsfdggdgdhdgfdsfgfdgsfdgsfg</a>,
+              <a href="https://instagram.com/709th" target="_blank">@709th</a>,
+              <a href="https://instagram.com/fuuck" target="_blank">@fuuck</a>,
+              <a href="https://instagram.com/spaceth" target="_blank">@spaceth</a>,
+              <a href="https://instagram.com/709th" target="_blank">@709th</a>,
+              <a href="https://instagram.com/fuuck" target="_blank">@fuuck</a></p>
+          </div>
+
+          <button class="accordion__open-btn" data-js-accordion-open></button>
+          <button class="accordion__close-btn" data-js-accordion-close>Закрыть</button>
+
+        </div>
+
+        <div class="accordion-content" data-js-accordion-content>
+          <form class="analysis__form" data-js-repeat-from>
+            <label class="label">
+              Укажите аккаунты (каждый, с новой строки)
+              <textarea required disabled data-js-analysisUsers>
+@709th
+@fuuck
+@spaceth
+@709th
+@fuuck</textarea>
+            </label>
+
+            <fieldset>
+              <label class="label">
+                Лимит подписчиков
+                <input type="number" class="input" value="7000" required disabled data-js-analysisLimitFollowers>
+              </label>
+              <label class="label">
+                Лимит количества результатов
+                <input type="number" class="input" value="17" required disabled data-js-analysisLimitResultsCount>
+              </label>
+
+              <input class="btn btn--active" type="submit" value="Начать анализ" disabled>
+            </fieldset>
+          </form>
+
+          <div class="accounts">
+            <div class="account-item">
+              <div class="account__img">
+                <a href="https://instagram.com/709th" target="_blank">
+                  <img src="http://placehold.it/60x60">
+                </a>
+              </div>
+              <div class="account__info">
+                <a class="account__username" href="https://instagram.com/709th" target="_blank">@709th</a>
+                <p>Среднее кол-во лайков: <strong>4k</strong></p>
+              </div>
+
+              <div class="account__followers">
+                <p class="account__title">Подписчиков</p>
+                <strong class="account__count">15k</strong>
+              </div>
+
+              <div class="account__involvement">
+                <p class="account__title">Вовлеченность аудитории</p>
+                <strong class="account__count">68%</strong>
+              </div>
+            </div>
+
+            <div class="account-item">
+              <div class="account__img">
+                <a href="https://instagram.com/709th" target="_blank">
+                  <img src="http://placehold.it/60x60">
+                </a>
+              </div>
+              <div class="account__info">
+                <a class="account__username" href="https://instagram.com/709th" target="_blank">@709th</a>
+                <p>Среднее кол-во лайков: <strong>4k</strong></p>
+              </div>
+
+              <div class="account__followers">
+                <p class="account__title">Подписчиков</p>
+                <strong class="account__count">15k</strong>
+              </div>
+
+              <div class="account__involvement">
+                <p class="account__title">Вовлеченность аудитории</p>
+                <strong class="account__count">68%</strong>
+              </div>
+            </div>
+
+            <div class="account-item">
+              <div class="account__img">
+                <a href="https://instagram.com/709th" target="_blank">
+                  <img src="http://placehold.it/60x60">
+                </a>
+              </div>
+              <div class="account__info">
+                <a class="account__username" href="https://instagram.com/709th" target="_blank">@709th</a>
+                <p>Среднее кол-во лайков: <strong>4k</strong></p>
+              </div>
+
+              <div class="account__followers">
+                <p class="account__title">Подписчиков</p>
+                <strong class="account__count">15k</strong>
+              </div>
+
+              <div class="account__involvement">
+                <p class="account__title">Вовлеченность аудитории</p>
+                <strong class="account__count">68%</strong>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="analysis__management">
+            <a class="analysis__all" href="">Смотреть все результаты</a>
+            <button class="btn btn--active analysis__repeat" data-js-repeat-btn>Начать новый анализ</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

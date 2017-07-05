@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пиросмани</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Philosopher:700|Roboto:300,400,500,700,900&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link href="static/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header-wrap">
+  <div class="site-header container hidden-md-down">
+    <a class="logo-wrap" href="/">
+      <img src="http://placehold.it/80x80" alt="">
+      <span class="logo-text">2Ken<small>вся республика в твоих руках</small></span>
+    </a>
+
+    <nav class="site-nav site-nav--header">
+      <ul>
+        <li class="site-nav__dropdown-link"><a href="catalog-list.html">Каталог</a>
+          <ul class="site-nav__dropdown">
+            <li><a href="catalog-list.html">Шопинг</a></li>
+            <li class="current"><a href="catalog-list.html">Еда</a></li>
+            <li><a href="catalog-list.html">Красота и здоровье</a></li>
+            <li><a href="catalog-list.html">Развлечения</a></li>
+            <li><a href="catalog-list.html">Услуги</a></li>
+            <li><a href="catalog-list.html">Праздник</a></li>
+            <li><a href="catalog-list.html">Электроника</a></li>
+            <li><a href="catalog-list.html">Свадьба</a></li>
+            <li><a href="catalog-list.html">Для дома и дачи</a></li>
+            <li><a href="catalog-list.html">Драгоценности</a></li>
+            <li><a href="catalog-list.html">Личное развитие</a></li>
+            <li><a href="catalog-list.html">Транспорт</a></li>
+            <li><a href="catalog-list.html">Путешествия</a></li>
+            <li><a href="catalog-list.html">Эко-продукция</a></li>
+            <li><a href="catalog-list.html">Гастрономия</a></li>
+            <li><a href="catalog-list.html">Банк</a></li>
+          </ul>
+        </li>
+        <li><a href="blog-list.html">Блог</a></li>
+        <li><a href="">Рейтинги</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-wrap">
+      
+
+      
+        <a class="user__username" href="personal.html">Magomed <img src="http://placehold.it/40x40" alt="Magomed"></a>
+        <div class="user__logout">
+          <a href="/">Выйти</a>
+        </div>
+      
+    </div>
+  </div>
+
+  <div class="site-header-xs container hidden-lg-up">
+    <div class="site-header-xs__top">
+      <a class="logo-wrap" href="/">
+        <img src="http://placehold.it/40x40" alt="">
+        <span class="logo-text">2Ken<small>вся республика в твоих руках</small></span>
+      </a>
+
+      <button class="header-xs__btn" data-js-xs-btn="catalog">Каталог</button>
+
+      <button class="header-xs-nav-toggle" data-js-xs-toggle-btn></button>
+    </div>
+    <div class="site-header-xs__bottom" data-js-xs-bottom>
+      <div>
+        <nav class="xs-nav">
+          <button class="xs-nav__item" data-js-xs-btn="blog">Блог</button>
+          <button class="xs-nav__item" data-js-xs-btn="rating">Рейтинги</button>
+        </nav>
+
+        
+
+        <div class="user-xs-wrap">
+          <img class="user-xs-img" src="static/img/profile-icon.svg">
+          <button class="xs-nav__item" data-js-xs-btn="sign_in">Войти</button>
+          <button class="xs-nav__item" data-js-xs-btn="sign_up">Регистрация</button>
+        </div>
+
+      </div>
+
+      <div class="auth-form-wrap-xs auth-form-wrap--sign-in" data-js-xs-content="sign_in">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <p class="auth-form__title">Авторизация</p>
+        <button class="auth-form__change-form-btn" data-js-xs-btn="sign_up">регистрация</button>
+
+        <form class="auth__form">
+          <input class="input" type="text" placeholder="логин" required>
+          <input class="input" type="password" placeholder="пароль" required>
+
+          <button class="btn btn--header-submit">Войти</button>
+        </form>
+
+        <p class="auth-form__or">или</p>
+        <div class="soc-auth"></div>
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="sign_up">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <p class="auth-form__title">Регистрация</p>
+        <button class="auth-form__change-form-btn" data-js-xs-btn="sign_in">авторизация</button>
+
+        <form class="auth__form">
+          <input class="input" type="text" placeholder="логин" required>
+          <input class="input" type="password" placeholder="пароль" required>
+          <input class="input" type="password" placeholder="пароль еще раз" required>
+
+          <button class="btn btn--header-submit">Зарегистрироваться</button>
+        </form>
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="catalog">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <div class="aside-catalog">
+  <h2 class="aside__title">Каталог</h2>
+
+  <form class="aside__form">
+    <input type="search" placeholder="поиск" required>
+  </form>
+
+  <ul>
+    
+      
+        <li class="current"><a href="../catalog-list.html">Шопинг</a>
+          <ul>
+            
+              <li><a href="../catalog-list.html">Рестораны (15)</a></li>
+            
+              <li><a href="../catalog-list.html">Магазины (42)</a></li>
+            
+              <li><a href="../catalog-list.html">Кафе (25)</a></li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Красота и здоровье</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Развлечения</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Услуги</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Праздник</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Электроника</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Свадьба</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Для дома и дачи</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Драгоценности</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Личное развитие</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Транспорт</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Путешествия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Эко-продукция</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Гастрономия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Банк</a></li>
+      
+    
+  </ul>
+</div>
+
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="blog">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <div class="aside-catalog">
+  <h2 class="aside__title">Блог</h2>
+
+  <ul>
+    
+      <li><a href="../blog-list.html">Автомобили</a></li>
+    
+      <li><a href="../blog-list.html">Наука и техника</a></li>
+    
+      <li><a href="../blog-list.html">Еда</a></li>
+    
+      <li><a href="../blog-list.html">Спорт</a></li>
+    
+      <li><a href="../blog-list.html">Животные</a></li>
+    
+      <li><a href="../blog-list.html">Мир</a></li>
+    
+      <li><a href="../blog-list.html">Места</a></li>
+    
+      <li><a href="../blog-list.html">Люди</a></li>
+    
+  </ul>
+</div>
+
+      </div>
+
+      <div class="auth-form-wrap-xs" data-js-xs-content="rating">
+        <button class="xs-form-btn-back" data-js-xs-back-btn>Назад</button>
+        <ul class="aside-cities">
+  <li><a href="">Буйнакск</a></li>
+  <li><a href="">Дагестанские огни</a></li>
+  <li><a class="current" href="">Дербент</a></li>
+  <li><a href="">Избербаш</a></li>
+  <li><a href="">Каспийск</a></li>
+  <li><a href="">Кизляр</a></li>
+  <li><a href="">Махачкала</a></li>
+  <li><a href="">Хасавюрт</a></li>
+  <li><a href="">Южно-Сухокумск</a></li>
+</ul>
+
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+<div class="container">
+  
+  <div class="row catalog-detail-page">
+
+    <aside class="col-lg-3 hidden-md-down">
+      <div class="aside-catalog">
+  <h2 class="aside__title">Каталог</h2>
+
+  <form class="aside__form">
+    <input type="search" placeholder="поиск" required>
+  </form>
+
+  <ul>
+    
+      
+        <li class="current"><a href="../catalog-list.html">Шопинг</a>
+          <ul>
+            
+              <li><a href="../catalog-list.html">Рестораны (15)</a></li>
+            
+              <li><a href="../catalog-list.html">Магазины (42)</a></li>
+            
+              <li><a href="../catalog-list.html">Кафе (25)</a></li>
+            
+          </ul>
+        </li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Красота и здоровье</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Развлечения</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Услуги</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Праздник</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Электроника</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Свадьба</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Для дома и дачи</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Драгоценности</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Личное развитие</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Транспорт</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Путешествия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Эко-продукция</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Гастрономия</a></li>
+      
+    
+      
+        <li><a href="../catalog-list.html">Банк</a></li>
+      
+    
+  </ul>
+</div>
+
+    </aside>
+
+    <div class="col-lg-9">
+      <div class="detail-info">
+        <ul class="detail-slider" data-js-lightslider>
+          <li>
+            <img src="http://placehold.it/835x376" alt="">
+          </li>
+          <li>
+            <img src="http://placehold.it/835x376" alt="">
+          </li>
+        </ul>
+        <div class="slider-next"></div>
+        <div class="slider-prev"></div>
+
+        <div class="detail-info__content">
+          <h2 class="detail-title">Пиросмани</h2>
+          <h3 class="detail-type">ресторан</h3>
+          <span class="detail-views">247</span>
+
+          <div class="detail-rating">
+            <a class="detail-rating__item" href="">105</a>
+            <a class="detail-rating__item" href="">2</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-contacts">
+
+        <div class="detail-contacts__info">
+          <p><strong>город:</strong> Махачкала</p>
+          <p><strong>улица:</strong> ул. Пушкина, 3</p>
+          <p><strong>телефон:</strong> 8 (963) 411-32-32</p>
+          <p><strong>время работы:</strong> пн-вс: 12:00 - 23:00</p>
+        </div>
+
+        <div class="detail__we-in">
+          <strong>мы в интернете:</strong>
+          <a href="" class="we-in__item we-in__item--web" target="_blank" rel="nofollow"></a>
+          <a href="" class="we-in__item we-in__item--vk" target="_blank" rel="nofollow"></a>
+          <a href="" class="we-in__item we-in__item--ig" target="_blank" rel="nofollow"></a>
+        </div>
+
+        <div class="detail-contacts__map">
+          будет карта
+        </div>
+
+      </div>
+
+      <div class="detail-reviews">
+        <h3 class="detail-reviews__title">Отзывы:</h3>
+
+        <div class="detail-reviews__list">
+          <div class="detail-reviews__item">
+            <img class="detail-reviews__image" src="http://placehold.it/70x70" alt="Guest">
+
+            <div class="detail-reviews__content">
+              <span class="detail-reviews__author">Guest</span>
+              <span class="detail-reviews__date">17 февраля 2017, 19:54</span>
+              <p class="detail-reviews__text">в доме дружбы или в нац библиотеке и то и другое здания полупустые целыми днями</p>
+            </div>
+          </div>
+
+          <div class="detail-reviews__item">
+            <img class="detail-reviews__image" src="http://placehold.it/70x70" alt="Guest">
+
+            <div class="detail-reviews__content">
+              <span class="detail-reviews__author">Guest</span>
+              <span class="detail-reviews__date">17 февраля 2017, 19:54</span>
+              <p class="detail-reviews__text">Против музеев ничего не имею, хотя сегодня мало кто ходит туда. Но зачем под строительство отводить парковую зону? Лучше бы привели в порядок стареющий парк, отремонтировали аттракционы или демонтировали старые и установили современные, создали карту прогулочных маршрутов.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="detail-reviews__form">
+          <img src="http://placehold.it/70x70x">
+
+          <div class="detail-form__content">
+            <textarea placeholder="текст отзыва" required></textarea>
+            <button class="btn">отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer class="site-footer-wrap">
+  <div class="site-footer container">
+    <span>2ken 2017</span>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="catalog-list.html">Каталог</a></li>
+        <li><a href="blog-list.html">Блог</a></li>
+        <li><a href="">Рейтинги</a></li>
+      </ul>
+    </nav>
+
+    <div class="soc">
+      <a class="soc-item--vk" href="" target="_blank"></a>
+      <a class="soc-item--ig" href="" target="_blank"></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="static/lib/css-polyfills.min.js"></script>
+<script src="static/lib/jquery.maskedinput.min.js"></script>
+<script src="static/lib/lightslider/lightslider.min.js"></script>
+<script src="static/lib/jquery.formstyler.min.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

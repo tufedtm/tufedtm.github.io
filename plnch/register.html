@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>регистрация</title>
+
+  <link href="static/css/app.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <div class="auth-main">
+    <div class="auth-left">
+      <img src="static/img/logo-color.svg" alt="logo">
+    </div>
+
+    <div class="auth-right">
+      <div class="register-wrap">
+        <p class="h1">Регистрация</p>
+        <span class="auth-text">Уже есть аккаунт?</span> <a class="auth--link" href="login.html">Авторизоваться!</a>
+
+        <form class="auth-form">
+          <label class="label label--auth">
+            Ваше имя
+            <input class="input input--auth" type="text" required>
+          </label>
+          <label class="label label--auth">
+            Укажите ваш email адрес
+            <input class="input input--auth" type="email" required>
+          </label>
+          <label class="label label--auth">
+            Ну и пароль тоже
+            <input class="input input--auth" type="password" required>
+          </label>
+          <label class="label label--auth label--captcha">
+            Введите цифры, которые видите
+            <img src="http://placehold.it/190x54">
+            <input class="input input--auth" type="text" required>
+          </label>
+
+          <input class="btn btn--active btn--auth" type="submit" value="Зарегестрироваться">
+
+          <label class="label label--auth label--checkbox">
+            <input type="checkbox" checked> Подписаться на полезную рассылку новостей
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="static/lib/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.6/jquery.formstyler.min.js"></script>
+<script src="https://cdn.jsdelivr.net/isotope/3.0.1/isotope.pkgd.min.js"></script>
+<script src="static/js/app.js"></script>
+
+</body>
+</html>

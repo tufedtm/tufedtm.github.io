@@ -1,0 +1,561 @@
+/*
+ * set centered container
+ */
+/*
+ * set element size
+ */
+/*
+ * set margin on left & right
+ */
+/*
+ * set margin on top & bottom
+ */
+/*
+ * set pading on left & right
+ */
+/*
+ * set padding on top & bottom
+ */
+/*
+ * set triangle from pseudo-element
+ */
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/lato/lato_300.woff2') format('woff2'), url('../font/lato/lato_300.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/lato/lato_400.woff2') format('woff2'), url('../font/lato/lato_400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/lato/lato_700.woff2') format('woff2'), url('../font/lato/lato_700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font: inherit;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+input[type=submit] {
+  cursor: pointer;
+  /* 3 */
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a,
+button,
+input,
+textarea {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+textarea {
+  resize: vertical;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.link {
+  color: #87c558;
+}
+/*
+ * buttons
+ */
+.btn {
+  width: 290px;
+  height: 54px;
+  border: none;
+}
+.btn[disabled] {
+  color: #ffffff;
+  background-color: #cfcfcf;
+}
+.btn--link {
+  background: none;
+}
+.btn--active {
+  color: #fff;
+  font-weight: 700;
+  background-color: #87c558;
+  border-radius: 4px;
+}
+.btn--auth {
+  width: 390px;
+  height: 54px;
+}
+/*
+ * headings
+ */
+.h1 {
+  margin-bottom: 15px;
+  color: #fefefe;
+  font-size: 30px;
+  font-weight: 300;
+}
+.h2,
+.h3 {
+  color: #fff;
+  font-weight: 700;
+}
+.h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.h-sub {
+  display: inline-block;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-weight: 300;
+}
+/*
+ * form
+ */
+.label {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  color: #9d9d9d;
+  font-size: 14px;
+  cursor: pointer;
+}
+.input,
+textarea {
+  display: block;
+  margin-top: 5px;
+  padding: 20px;
+  color: #2c2c2c;
+  font-weight: 700;
+  background-color: #f8fafc;
+  border: 1px solid #dfe3e9;
+  border-radius: 4px;
+}
+.input {
+  width: 290px;
+  height: 54px;
+}
+.input--auth {
+  width: 390px;
+}
+textarea {
+  width: 520px;
+  height: calc(100% + 8px);
+  resize: none;
+}
+.jq-checkbox {
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #dfe3e9;
+  border-radius: 2px;
+}
+.jq-checkbox.checked .jq-checkbox__div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  background-color: #87c558;
+  border-radius: 2px;
+}
+html {
+  font-family: Lato, sans-serif;
+}
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px 50px;
+}
+.header__user {
+  margin-right: auto;
+}
+.header__link {
+  margin-left: 60px;
+  color: #9d9d9d;
+  font-size: 14px;
+}
+.header__link + .header__link {
+  margin-left: 30px;
+}
+.header__link--username {
+  color: #29233b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header__divider {
+  position: relative;
+}
+.header__divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  width: 1px;
+  height: 30px;
+  margin: auto;
+  background-color: #f3f3f3;
+}
+.header__balance .header__link {
+  color: #29233b;
+}
+.header__balance-count {
+  font-weight: 700;
+}
+.refill {
+  margin-left: 60px;
+  color: #9d9d9d;
+  font-size: 14px;
+  color: #87c558;
+  border-bottom: 1px solid;
+}
+.refill + .header__link {
+  margin-left: 30px;
+}
+.auth-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.auth-left,
+.auth-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 50%;
+  padding: 10px;
+}
+.auth-left {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #231e32;
+}
+.auth-right {
+  padding-left: 80px;
+  background-color: #1e1a2a;
+}
+.auth-text__item {
+  max-width: 485px;
+  margin-top: 50px;
+  line-height: 27px;
+}
+.auth-text {
+  color: #9d9d9d;
+}
+.auth-footer {
+  width: 485px;
+  margin-top: 15vh;
+  color: #9d9d9d;
+  font-size: 14px;
+}
+.auth-form {
+  max-width: 390px;
+}
+.pass-restore-link {
+  position: absolute;
+  top: 41%;
+  right: 20px;
+  color: #404040;
+  font-size: 14px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.pass-restore-link + .input {
+  padding-right: 80px;
+}
+.label--captcha img,
+.label--captcha input {
+  width: 190px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.label--captcha img {
+  height: 54px;
+  margin-right: 6px;
+  border-radius: 4px;
+}
+.label--checkbox {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.dashboard {
+  min-height: 99vh;
+  padding: 70px;
+  background-color: #f8f8f8;
+}
+.dashboard__content {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.dashboard__item {
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.09);
+}
+.analysis__title {
+  color: #dfdfdf;
+  font-size: 30px;
+  font-weight: 700;
+}
+.analysis__title--add {
+  margin-bottom: 25px;
+}
+.analysis__title--fin {
+  color: #625785;
+}
+.analysis__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.accordion-header--open {
+  margin-bottom: 30px;
+}
+.analysis__bar-wrap {
+  margin-left: 20px;
+}
+.analysis__bar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+.analysis__percent {
+  color: #2c2c2c;
+  font-weight: 700;
+}
+.analysis__followers {
+  color: #9d9d9d;
+}
+.analysis__bar {
+  width: 400px;
+  height: 6px;
+  background-color: #ebebeb;
+  border-radius: 3px;
+}
+.analysis__bar-fill {
+  display: block;
+  height: 6px;
+  background-color: #a6d48a;
+  border-radius: 3px;
+}
+.analysis__list {
+  width: 205px;
+  margin-right: 20px;
+}
+.analysis__list-title {
+  margin-bottom: 5px;
+  color: #9d9d9d;
+}
+.analysis__list-btn {
+  padding: 0;
+  color: #87c558;
+  border: none;
+  background: none;
+  border-bottom: 1px solid;
+}
+.analysis__list-items {
+  display: none;
+  color: #2c2c2c;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.accordion__open-btn {
+  width: 30px;
+  height: auto;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/accordion-arr.svg);
+}
+.accordion__close-btn {
+  display: none;
+  width: 290px;
+  height: 53px;
+  color: #2c2c2c;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background-color: #ebebeb;
+  border-radius: 4px;
+}
+.accordion-content {
+  display: none;
+  margin-top: 30px;
+}
+.accounts {
+  margin: 40px -30px 30px;
+}
+.account-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+  border-top: 1px solid #eee;
+}
+.account-item:last-of-type {
+  border-bottom: 1px solid #eee;
+}
+.account__img img {
+  border-radius: 50%;
+}
+.account__info {
+  width: 35%;
+  margin-left: 30px;
+}
+.account__username {
+  display: block;
+  margin-bottom: 10px;
+  color: #87c558;
+  font-size: 18px;
+  font-weight: 700;
+}
+.account__followers,
+.account__involvement {
+  margin-left: 40px;
+}
+.account__title {
+  margin-bottom: 10px;
+  color: #9d9d9d;
+  font-size: 14px;
+}
+.account__count {
+  font-size: 18px;
+}
+.analysis__management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.analysis__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 290px;
+  height: 54px;
+  color: #87c558;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: 2px solid;
+}
+.analysis__repeat {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=app.css.map */
